@@ -3,6 +3,8 @@
 This Docker image installs [Adobe Experience Manager 6.0](http://docs.adobe.com/docs/en/aem/6-0.html), and allows it
 to be run within a Docker container.
 
+> Updated with Service Pack update support.
+
 ## About docker-aem-author
 
 > *You must have a copy of the AEM 6 installation Media for this to work
@@ -11,6 +13,7 @@ You must copy your AEM installation media into the base directory before
 running this image. The image expects the following files within the base directory:
 * cq-author-4502.jar
 * license.properties
+* aem-servicepack.zip
 
 ## Usage
 Create a new Dockerfile within your directory, and insert the following:
