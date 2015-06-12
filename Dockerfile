@@ -9,7 +9,7 @@ ONBUILD ADD https://raw.githubusercontent.com/ggotti/aem-author/master/postInsta
 
 # Extracts AEM
 ONBUILD WORKDIR /aem
-ONBUILD RUN java -XX:MaxPermSize=256m -Xmx1024M -jar cq-author-4502.jar -unpack -r nosamplecontent
+ONBUILD RUN java -XX:MaxPermSize=256m -Xmx1024M -jar cq-author-4502.jar -unpack -r
 
 # Copy our Service Pack update to install folder before installing AEM
 ONBUILD ADD aem-servicepack.zip /aem/crx-quickstart/install
